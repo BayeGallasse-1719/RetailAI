@@ -1,0 +1,13 @@
+services:
+  db:
+    container_name: Postegres-dev
+    image: Postegres:18
+    environment:
+      - POSTGRES_PWD = superSecretKey
+    ports:
+      - 5432:5432
+    volumes:
+      -
+volumes:
+  postgres_data:
+
